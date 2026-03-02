@@ -21,7 +21,7 @@ export default function Notifications() {
       <Typography variant="h4" gutterBottom>Notifications</Typography>
       {messages.map((msg, i) => (
         <Paper key={i} elevation={4} sx={{ p: 2, mb: 2, borderRadius: 2 }}>
-          <Typography>{msg.text}</Typography>
+          <Typography>{msg.message}</Typography>
           <Typography variant="caption">{msg.timestamp}</Typography>
         </Paper>
       ))}
