@@ -10,7 +10,7 @@ export default function Notifications() {
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const querySnapshot = await getDocs(collection(db, "notifications"));
+      const querySnapshot = await getDocs(collection(db, "wheelchair/notifications"));
       setMessages(querySnapshot.docs.map(doc => doc.data()));
     };
     fetchMessages();
