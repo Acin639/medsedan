@@ -44,7 +44,7 @@ export default function Help() {
           </Paper>
         ))
       )}
-      <Button variant="outlined" onClick={() => navigate("/home")}>Back</Button>
+      
     </Container>
   );
           }
